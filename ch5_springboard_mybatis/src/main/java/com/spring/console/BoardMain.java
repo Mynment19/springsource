@@ -30,10 +30,10 @@ public class BoardMain {
 //		
 //		System.out.println(service.deleteBoard(2)?"삭제성공":"삭제실패");
 				
-		List<BoardDTO> list = service.getRows();
-		for (BoardDTO boardDTO : list) {
-			System.out.println(boardDTO);
-		}
+//		List<BoardDTO> list = service.getRows();
+//		for (BoardDTO boardDTO : list) {
+//			System.out.println(boardDTO);
+//		}
 		
 		System.out.println(service.getRow(1));
 		
