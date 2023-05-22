@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.spring</groupId>
 	<artifactId>controller</artifactId>
-	<name>member_webmvc</name>
+	<name>board_webmvc</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
@@ -20,7 +20,7 @@
 		    <artifactId>spring-security-core</artifactId>
 		    <version>5.5.8</version>
 		</dependency>
-	
+		
 		<!-- mybatis 프레임워크를 사용하기 위한 라이브러리 -->
 		<dependency>
 		    <groupId>org.mybatis</groupId>
