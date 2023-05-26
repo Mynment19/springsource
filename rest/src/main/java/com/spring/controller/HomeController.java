@@ -30,7 +30,7 @@ public class HomeController {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home() {
+	public String home() {		
 		
 		return "index";
 	}
@@ -38,23 +38,49 @@ public class HomeController {
 	@ResponseBody
 	@GetMapping(value="/test",produces = MediaType.APPLICATION_JSON_VALUE)
 	public SampleDTO sendDto() {
-		return new SampleDTO("1234","홍","길동");
+		return new SampleDTO("1234", "홍", "길동");
 	}
 	
 	
 	@GetMapping(value="/check1",produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<SampleDTO> check(double height, double weight) {
 		
-		SampleDTO dto = new SampleDTO("1234",""+height,""+weight);
+		SampleDTO dto = new SampleDTO("1234", ""+height, ""+weight);
 		
 		ResponseEntity<SampleDTO> entity = null;
-		if (height<160) {
-			entity = new ResponseEntity<SampleDTO>(dto,HttpStatus.BAD_REQUEST);
+		
+		if(height < 160) {
+			entity = new ResponseEntity<SampleDTO>(dto, HttpStatus.BAD_REQUEST);
 		}else {
-			entity = new ResponseEntity<SampleDTO>(dto,HttpStatus.OK);
-		}
+			entity = new ResponseEntity<SampleDTO>(dto, HttpStatus.OK);
+		}	
 		
 		return entity;
 	}
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
