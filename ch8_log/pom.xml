@@ -11,9 +11,15 @@
 		<java-version>11</java-version>
 		<org.springframework-version>5.3.27</org.springframework-version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
-		<org.slf4j-version>2.0.7</org.slf4j-version>  <!-- logging framework(Facade) -->
+		<org.slf4j-version>2.0.7</org.slf4j-version> <!-- logging framework(Facade) -->
 	</properties>
 	<dependencies>
+		<dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>1.18.26</version>
+		    <scope>provided</scope>
+		</dependency>
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -32,12 +38,6 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
-		<dependency>
-		    <groupId>org.projectlombok</groupId>
-		    <artifactId>lombok</artifactId>
-		    <version>1.18.26</version>
-		    <scope>provided</scope>
-		</dependency>
 				
 		<!-- AspectJ -->
 		<dependency>
@@ -55,14 +55,13 @@
 		<dependency>
 		    <groupId>ch.qos.logback</groupId>
 		    <artifactId>logback-classic</artifactId>
-		    <version>1.4.7</version>
+		    <version>1.4.7</version>		  
 		</dependency>
 		<dependency>
 		    <groupId>ch.qos.logback</groupId>
 		    <artifactId>logback-core</artifactId>
 		    <version>1.4.7</version>
 		</dependency>
-		
 		
 
 		<!-- @Inject -->

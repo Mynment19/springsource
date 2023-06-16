@@ -10,7 +10,6 @@ import com.spring.mapper.SampleMapper2;
 @Service("sample")
 public class SampleServiceImpl implements SampleService {
 	
-	
 	@Autowired
 	private SampleMapper1 mapper1;
 	
@@ -20,10 +19,16 @@ public class SampleServiceImpl implements SampleService {
 	@Transactional
 	@Override
 	public void addData(String data) {
-
-		mapper1.insertCol1(data);
-		mapper2.insertCol1(data);
 		
+		mapper1.insertCol1(data);		
+		mapper2.insertCol1(data);
+
 	}
 
 }
+
+
+
+
+
+

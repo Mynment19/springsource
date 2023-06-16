@@ -6,11 +6,11 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-
-@AllArgsConstructor @NoArgsConstructor
-@Getter @Setter @ToString
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+@Getter @Setter
 public class PersonDTO {
 	private String id;
 	private String name;
-	
 }

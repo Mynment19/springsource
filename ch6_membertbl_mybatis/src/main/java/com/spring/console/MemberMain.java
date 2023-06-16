@@ -21,8 +21,8 @@ public class MemberMain {
 		
 		//멤버 정보 수정
 		MemberDTO updateDto = new MemberDTO();
-		updateDto.setUserid("hong123");
-		updateDto.setPassword("hong123@");
+		updateDto.setUserid("kim123@");
+		updateDto.setPassword("kim123@");
 		updateDto.setEmail("kim3456@naver.com");
 		System.out.println(service.updateMember(updateDto)?"수정성공":"수정실패");
 		
@@ -32,6 +32,7 @@ public class MemberMain {
 
 	}
 }
+
 
 
 

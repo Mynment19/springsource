@@ -12,8 +12,7 @@ import com.spring.mapper.PersonMapper;
 public class PersonServiceImpl implements PersonService {
 	
 	@Autowired
-	private PersonMapper mapper;
-	
+	private PersonMapper mapper;	
 
 	@Override
 	public boolean insertPerson(PersonDTO insert) {
@@ -21,23 +20,32 @@ public class PersonServiceImpl implements PersonService {
 	}
 
 	@Override
-	public boolean updatePerson(PersonDTO update) {
+	public boolean updatePerson(PersonDTO update) {		
 		return mapper.updatePerson(update)==1?true:false;
 	}
 
 	@Override
-	public boolean deletePerson(String id) {
+	public boolean deletePerson(String id) {		
 		return mapper.deletePerson(id)==1?true:false;
 	}
 
 	@Override
-	public List<PersonDTO> getRows() {
+	public List<PersonDTO> getRows() {		
 		return mapper.selectAll();
 	}
 
 	@Override
-	public PersonDTO getRow(String id) {
+	public PersonDTO getRow(String id) {		
 		return mapper.selectOne(id);
 	}
-
 }
+
+
+
+
+
+
+
+
+
+

@@ -7,13 +7,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>INDEX</h1>
+	<h1>Index</h1>
 	<ul>
 		<li>
 			<a href="/member/login">로그인</a>
 		</li>
 		<li>
 			<a href="/member/register">회원가입</a>
+		</li>
+		<li>
+			<a href="/board/register">글 등록</a>
 		</li>
 	</ul>
 </body>

@@ -12,9 +12,9 @@ import com.spring.domain.PersonDTO;
 public class PersonDAO {
 	
 	@Autowired
-	private SqlSession sqlSession;
+	private SqlSession sqlSession;	
 	
-	private static final String namespace="com.spring.mapper.PersonMapper";
+	private static final String namespace="com.spring.mapper.PersonMapper";	
 	
 	public int insert(PersonDTO insert) {
 		return sqlSession.insert(namespace+".insertPerson", insert);
@@ -35,6 +35,23 @@ public class PersonDAO {
 	public List<PersonDTO> getRows() {
 		return sqlSession.selectList(namespace+".selectAll");
 	}
-	
-	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

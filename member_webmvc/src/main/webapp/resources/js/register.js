@@ -1,7 +1,7 @@
 /**
  * 폼 모든 요소가 비어있는지 확인
+ * 
  */
-
 const form = document.querySelector("form");
 
 form.addEventListener("submit",(e)=>{

@@ -20,7 +20,7 @@
 		    <artifactId>spring-security-core</artifactId>
 		    <version>5.5.8</version>
 		</dependency>
-	
+		
 		<!-- mybatis 프레임워크를 사용하기 위한 라이브러리 -->
 		<dependency>
 		    <groupId>org.mybatis</groupId>

@@ -10,4 +10,5 @@ public interface BoardMapper {
 	public int update(BoardDTO dto);
 	public List<BoardDTO> getRows();
 	public BoardDTO getRow(int bno);
+	
 }

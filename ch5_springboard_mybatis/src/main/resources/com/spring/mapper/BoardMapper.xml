@@ -4,20 +4,16 @@
 	<insert id="insert">
 		insert into spring_board(bno,title,content,writer) values(seq_board.nextval,#{title},#{content},#{writer})
 	</insert>
-	
 	<delete id="delete">
 		delete from spring_board where bno=#{bno}
 	</delete>
-	
 	<update id="update">
 		update spring_board set title=#{title},content=#{content},updatedate=sysdate where bno=#{bno}
 	</update>
-	
-	<select id="gerRow">
-		select * from spring_board where bno=#{bno}
-	</select>
-		
-	<select id="getRows">
+	<select id="getRows" resultType="com.spring.domain.BoardDTO">
 		select * from spring_board
+	</select>
+	<select id="getRow" resultType="com.spring.domain.BoardDTO">
+		select * from spring_board where bno=#{bno}
 	</select>
 </mapper>

@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.spring.domain.BoardDTO;
 import com.spring.mapper.BoardMapper;
 
+
 @Service("board")
 public class BoardServiceImpl implements BoardService {
 
@@ -17,17 +18,17 @@ public class BoardServiceImpl implements BoardService {
 	
 	@Override
 	public boolean insertBoard(BoardDTO dto) {
-		return mapper.insert(dto) == 1 ? true:false;
+		return mapper.insert(dto) == 1 ? true : false;
 	}
 
 	@Override
 	public boolean updateBoard(BoardDTO dto) {		
-		return mapper.update(dto) == 1 ? true:false;
+		return mapper.update(dto) == 1 ? true : false;
 	}
 
 	@Override
 	public boolean deleteBoard(int bno) {		
-		return mapper.delete(bno) == 1 ? true:false;
+		return mapper.delete(bno)== 1 ? true : false;
 	}
 
 	@Override

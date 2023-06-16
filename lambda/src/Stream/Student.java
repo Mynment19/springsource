@@ -1,10 +1,11 @@
-package Stream;
+package stream;
+
+
+
 
 public class Student {
 	private String name;
 	private int jumsu;
-	
-	
 	public Student(String name, int jumsu) {
 		super();
 		this.name = name;
@@ -25,5 +26,5 @@ public class Student {
 	@Override
 	public String toString() {
 		return "Student [name=" + name + ", jumsu=" + jumsu + "]";
-	}
+	}		
 }

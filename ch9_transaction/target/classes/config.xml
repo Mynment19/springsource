@@ -9,7 +9,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
 
-	<!-- 지정된 패키지에 어노테이션 인식하기 -->
+	<!-- 지정된 패키지에 어노테이션 인식하기 -->	
 	<context:component-scan base-package="com.spring.service"/>
 	
 	<!-- DBCP : HikariCP 라이브러리 사용 -->
@@ -26,16 +26,34 @@
 	
 	<!-- mybatis 설정 -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-		<property name="dataSource" ref="ds" />
+		<property name="dataSource" ref="ds"/>		
 	</bean>
 	<mybatis-spring:scan base-package="com.spring.mapper"/>
 	
+	
 	<!-- 스프링 트랜잭션 매니저 등록 -->
 	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-		<property name="dataSource" ref="ds" />
+		<property name="dataSource" ref="ds"/>
 	</bean>
 	
-	<!-- @Transactional 활성화 -->
+	<!-- @Transactional 활성화  -->
 	<tx:annotation-driven/>
-	
 </beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

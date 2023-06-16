@@ -8,10 +8,10 @@ public class Product {
 	private String pname;
 	private String price;
 	
-	public void getInfo() throws Exception{
-		System.out.println("회사명 : " + company);
-		System.out.println("제품명 : " + pname);
-		System.out.println("가격 : " + price);
+	public void getInfo() throws Exception {			
+		System.out.println("회사명 : "+company);
+		System.out.println("제품명 : "+pname);
+		System.out.println("가격 : "+price);
 		throw new Exception("예외 사항 발생");
 	}
 
@@ -37,7 +37,5 @@ public class Product {
 
 	public void setPrice(String price) {
 		this.price = price;
-	}
-	
-	
+	}	
 }

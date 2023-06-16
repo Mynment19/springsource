@@ -98,7 +98,7 @@
         </li>
         
         
-        <c:if test="${authDto == null}">               
+        <c:if test="${authDTO == null}">               
 	        <li class="nav-item">         
 	          	<a class="nav-link" href='<c:url value="/member/login"  />'>로그인</a>
 	        </li>

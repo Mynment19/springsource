@@ -6,8 +6,10 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@AllArgsConstructor @NoArgsConstructor
-@Getter @Setter @ToString
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+@Getter @Setter
 public class MemberDTO {
 	private String userid;
 	private String password;
